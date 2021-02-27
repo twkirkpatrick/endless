@@ -30,15 +30,18 @@ h4 {
 h4 {
   margin-bottom: 0.75rem;
   font-size: 20px;
+  animation: moveFromTop 1.5s ease-out;
 }
 
 span {
   display: block;
   font-size: 40px;
+  animation: moveFromLeft 1.5s ease-out;
 }
 
 p {
   margin-top: 1rem;
+  animation: moveFromRight 1.5s ease-out;
 }
 
 .paragraph {
@@ -56,6 +59,60 @@ p {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:hover {
+  background-color: #a5f3df;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 920px) {
