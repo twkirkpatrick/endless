@@ -60,6 +60,7 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease-out;
+  animation: moveFromBottom 1.5s ease-out;
 }
 
 @keyframes moveFromLeft {
@@ -102,6 +103,18 @@ p {
 
   80% {
     transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
   }
 
   100% {
