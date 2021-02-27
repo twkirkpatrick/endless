@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 
+/* =================
+     GLOBAL STYLES
+   ================= 
+*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* ================= 
+       LAYOUT
+   ================= 
+*/
+
 .logo {
   width: 100px;
   filter: invert(87%) sepia(21%) saturate(7478%) hue-rotate(115deg)
     brightness(102%) contrast(95%);
-  margin-left: 10rem;
+  margin-left: 10.5rem;
 }
 
 .content {
@@ -18,7 +27,7 @@
   color: white;
   position: absolute;
   top: 22rem;
-  left: 13rem;
+  left: 11rem;
 }
 
 .content,
@@ -59,8 +68,26 @@ p {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.2s ease-out;
   animation: moveFromBottom 1.5s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* ================= 
+     ANIMATIONS
+   ================= 
+*/
+
+.btn:hover {
+  background-color: #12bb91;
+  transform: translateY(-3px);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: translateY(-2px);
 }
 
 @keyframes moveFromLeft {
@@ -123,10 +150,10 @@ p {
   }
 }
 
-.btn:hover {
-  background-color: #a5f3df;
-  transform: scale(1.1);
-}
+/* ================= 
+    MEDIA QUERIES
+   ================= 
+*/
 
 @media only screen and (max-width: 920px) {
   .paragraph {
