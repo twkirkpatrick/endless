@@ -6,6 +6,7 @@ const Logo = () => {
     <div>
       <img
         src={logo}
+        className="logo"
         alt="endless-logo"
         style={{
           width: "100px",
