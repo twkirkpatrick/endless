@@ -1,9 +1,10 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
-      <img src="/img/logo-endless.svg" alt="endless-logo" className="logo" />
+    <nav style={{ backgroundColor: "rgb(61, 59, 59)", padding: "7px" }}>
+      <Logo />
     </nav>
   );
 };
