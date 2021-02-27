@@ -1,18 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 
-/* font-family: 'Lato', sans-serif; */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* .main {
-  background-image: url("/img/photo-couch.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.content {
+  font-family: "Lato", sans-serif;
+  color: white;
+  position: absolute;
+  top: 22rem;
+  left: 13rem;
 }
- */
+
+.content,
+span,
+h4 {
+  font-weight: 300;
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+}
+
+span {
+  display: block;
+}
+
+p {
+  margin-top: 1.75rem;
+}
