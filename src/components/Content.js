@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Content = () => {
   return (
@@ -15,6 +16,7 @@ const Content = () => {
           your doorstep - every month.
         </p>
       </div>
+      <Button />
     </div>
   );
 };

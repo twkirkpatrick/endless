@@ -46,6 +46,18 @@ p {
   line-height: 1.7;
 }
 
+.btn {
+  background-color: #65f5d2;
+  margin-top: 12px;
+  margin-left: 4px;
+  padding: 7px 26px;
+  border-radius: 100px;
+  border: 1px solid rgb(26, 25, 25);
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 920px) {
   .paragraph {
     width: 75%;
