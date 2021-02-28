@@ -84,13 +84,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 
 .step-container {
   text-align: center;
   width: 250px;
+  margin-right: 1rem;
 }
 
 .step-number {
@@ -99,7 +100,7 @@ p {
 
 .step-number:before {
   position: absolute;
-  bottom: -5px;
+  bottom: -8px;
   left: 110px;
   width: 33px;
   height: 2px;
@@ -116,7 +117,7 @@ p {
 
 .title {
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .step-content {
@@ -125,6 +126,9 @@ p {
 
 .step-body {
   font-weight: 300;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1rem;
+  font-size: 15px;
 }
 
 /* ================= 
