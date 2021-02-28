@@ -16,7 +16,12 @@ const Steps = () => {
 
   return (
     <div className="steps">
-      {steps && steps.map((step) => <h1>{step.title}</h1>)}
+      {steps &&
+        steps.map((step) => (
+          <h1>
+            {step.stepNumber} {step.title}
+          </h1>
+        ))}
     </div>
   );
 };
