@@ -8,6 +8,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ================= 
@@ -23,7 +28,6 @@
 }
 
 .content {
-  font-family: "Lato", sans-serif;
   color: white;
   position: absolute;
   top: 22rem;
@@ -60,16 +64,39 @@ p {
 
 .btn {
   background-color: #65f5d2;
+  display: inline-block;
   margin-top: 12px;
   margin-left: 4px;
   padding: 7px 26px;
+  font-weight: 400;
+  font-size: 14px;
   border-radius: 100px;
   border: 1px solid rgb(26, 25, 25);
-  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: black;
   text-transform: uppercase;
   cursor: pointer;
   animation: moveFromBottom 1.5s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.step-heading {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 23px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.step-content {
+  font-weight: 400;
+}
+
+.step-body {
+  font-weight: 300;
 }
 
 /* ================= 

@@ -1,7 +1,11 @@
 import React from "react";
 
 const Button = () => {
-  return <button className="btn">Get Started</button>;
+  return (
+    <a className="btn" href="#steps">
+      Get Started
+    </a>
+  );
 };
 
 export default Button;
