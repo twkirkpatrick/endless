@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getSteps } from "../utils/API";
 import { sortSteps } from "../utils/sortSteps";
 import { getRecentDate } from "../utils/getRecentDate";
+import StepItem from "./StepItem";
 
 const Steps = () => {
   const [steps, setSteps] = useState([]);
@@ -16,12 +17,7 @@ const Steps = () => {
 
   return (
     <div className="steps">
-      {steps &&
-        steps.map((step) => (
-          <h1>
-            {step.stepNumber} {step.title}
-          </h1>
-        ))}
+      {steps && steps.map((step) => <StepItem step={step} />)}
     </div>
   );
 };
