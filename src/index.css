@@ -80,6 +80,33 @@ p {
   transition: all 0.2s ease-out;
 }
 
+#step-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.step-container {
+  text-align: center;
+  width: 250px;
+}
+
+.step-number {
+  position: relative;
+}
+
+.step-number:before {
+  position: absolute;
+  bottom: -5px;
+  left: 110px;
+  width: 33px;
+  height: 2px;
+  content: "";
+  border-bottom: 3px solid #65f5d2;
+}
+
 .step-heading {
   text-align: center;
   font-weight: 300;
@@ -89,6 +116,7 @@ p {
 
 .title {
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .step-content {
