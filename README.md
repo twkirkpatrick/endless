@@ -4,7 +4,7 @@ A single-page React application for fictitious company, Endless. The goal of thi
 
 <img src = "public/endless.png" alt="screenshot of endless">
 
-View the deployed application <a href = "">here</a>
+View the deployed application <a href = "https://endless-games.netlify.app/">here</a>
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ If you would like to use the application in your local environment:
 2. Install required dependencies by running command `npm i`
 3. Run command `npm start`
 
-Otherwise, visit the deployed application <a href = "">here</a>
+Otherwise, visit the deployed application <a href = "https://endless-games.netlify.app/">here</a>
 
 ## Resources
 
