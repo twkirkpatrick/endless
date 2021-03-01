@@ -16,7 +16,7 @@ const Steps = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h3 className="step-heading">How It Works</h3>
       <div id="step-wrapper">
         {steps && steps.map((step) => <StepItem step={step} />)}

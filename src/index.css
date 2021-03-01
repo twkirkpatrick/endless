@@ -76,8 +76,10 @@ p {
   color: black;
   text-transform: uppercase;
   cursor: pointer;
-  animation: moveFromBottom 1.5s ease-out;
+  animation: moveFromBottom 1.25s ease-out;
+  animation-delay: 1.5s;
   transition: all 0.2s ease-out;
+  animation-fill-mode: backwards;
 }
 
 #step-wrapper {
@@ -96,13 +98,14 @@ p {
 
 .step-number {
   position: relative;
+  font-size: 45px;
 }
 
 .step-number:before {
   position: absolute;
   bottom: -8px;
-  left: 110px;
-  width: 33px;
+  left: 105px;
+  width: 42px;
   height: 2px;
   content: "";
   border-bottom: 3px solid #65f5d2;
@@ -200,7 +203,7 @@ p {
 @keyframes moveFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(400px);
+    transform: translateY(125px);
   }
 
   100% {
