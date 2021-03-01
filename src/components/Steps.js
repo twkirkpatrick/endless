@@ -11,7 +11,6 @@ const Steps = () => {
     getSteps().then((stepsArray) => {
       const sortedSteps = sortSteps(stepsArray);
       setSteps(getRecentDate(sortedSteps));
-      console.log(steps);
     });
     //eslint-disable-next-line
   }, []);
