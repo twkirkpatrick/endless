@@ -13,13 +13,15 @@ const Steps = () => {
       setSteps(getRecentDate(sortedSteps));
       console.log(steps);
     });
+    //eslint-disable-next-line
   }, []);
 
   return (
     <div className="container">
       <h3 className="step-heading">How It Works</h3>
       <div id="step-wrapper">
-        {steps && steps.map((step) => <StepItem step={step} />)}
+        {steps &&
+          steps.map((step) => <StepItem step={step} key={step.stepNumber} />)}
       </div>
     </div>
   );
