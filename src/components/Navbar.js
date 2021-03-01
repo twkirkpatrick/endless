@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav style={{ backgroundColor: "rgb(61, 59, 59)", padding: "7px" }}>
+    <nav style={{ backgroundColor: "rgb(29, 27, 27)", padding: "10px" }}>
       <Logo />
     </nav>
   );
