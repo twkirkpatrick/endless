@@ -1,9 +1,10 @@
 export const getRecentDate = (steps) => {
   // Mapping over the steps that are passed into the function and returning an object with the stepNumber and most recent versionContent object by evaluating the effectiveDate.
+
   const extractedContent = steps.map((step) => ({
     stepNumber: step.stepNumber,
     stepInfo: step.versionContent.reduce((a, b) =>
-      a.effectiveDate > b.effectiveDate ? a : b
+      new Date(a.effectiveDate) > new Date(b.effectiveDate) ? a : b
     )
   }));
 
